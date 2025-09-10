@@ -22,7 +22,14 @@ pipeline
 			{
 				sh 'mvn clean'
 			}
-		}		
+		}	
+		stage('Clean Success ')
+		{
+			steps
+			{
+				echo "Clean has been done Successfully"
+			}
+		}	
 		stage('Build & Install Stage')
 		{
 			steps
